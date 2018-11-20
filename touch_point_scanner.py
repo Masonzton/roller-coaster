@@ -1,9 +1,11 @@
+#this is the code used on the raspberry pi to read barcodes
+
 import RPi.GPIO as GPIO
 import cv2
 import time
 from pyzbar import pyzbar
 import json
-cap = cv2.VideoCapture('http://192.168.43.1:8080/video')
+cap = cv2.VideoCapture('http://192.168.43.1:8080/video') #this is the ip address of the webcam
 
 #this is roller coaster 1
 #it is now time t1
